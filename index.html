@@ -8,8 +8,6 @@
 <meta name="color-scheme" content="dark">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%230b0b0c'/><text x='1.5' y='12' font-family='monospace' font-size='11' fill='%23c9c7c0'>$_</text></svg>">
 
-
-
 <style>
 :root{
   --col:82ch;            /* the page is a terminal: 82 columns, hard */
@@ -151,9 +149,9 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;
 <nav class="nav" aria-label="Sections">
   <a href="#about" data-cmd="about">about</a>
   <a href="#work" data-cmd="work">work</a>
+  <a href="#school" data-cmd="school">school</a>
   <a href="#projects" data-cmd="projects">projects</a>
   <a href="#stack" data-cmd="stack">stack</a>
-  <a href="#ramblings" data-cmd="ramblings">ramblings</a>
   <a href="#contact" data-cmd="contact">contact</a>
 </nav>
 
@@ -174,8 +172,9 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;
 <section id="about">
   <p class="cmd"><span class="dim">$</span> <b>cat about.txt</b></p>
   <div class="out">
-    <p>My work spans the whole 9 yards of the modern AI infrastructure scene, i.e ML infrastructure, backend systems and applied AI: inference, retrieval, distributed systems, model serving, performance engineering and the unpleasant plumbing between all of them. I derive most of my enjoyment from fighting fires on-call, ghosthunting in labyrinthian codebases and being the point guy to fix problems, build and then scale stuff that works well. A pondering code monkey, but a code monkey at heart.</p> 
+    <p>My work spans the whole 9 yards of the modern AI infrastructure scene, i.e ML infrastructure, backend systems and applied AI: inference, retrieval, distributed systems, model serving, performance engineering and the unpleasant plumbing between all of them. I derive most of my enjoyment from fighting fires on-call, ghosthunting in labyrinthian codebases and being the point guy to fix problems, build and then scale stuff that works well. A pondering code monkey, but a code monkey at heart.</p>
     <p>Lately I have been enjoying building greenfield privatised agentic frameworks to serve clients with legacy systems. In the modern AI economy, buzzwords like 'agents', 'multimodal', 'rag' get thrown around like chewed up dog toys. My role is to build systems that work for clients that operate in rigid regulatory environments and require high privacy, bringing these technological paradigms down to earth in a way that works for them.</p>
+    <p>Outside of work I enjoy open-source development, digital decentralisation, competitive programming and digital and AI sovereignty.</p>
     <p>I derive great delight in watching the AI systems we scale empowering the masses to do things they otherwise wouldn't. A side effect of this is that everything on the internet seems to look the same these days. I built this website as a toast to the real ones on the net. Something real in a sea of em-dashes and rule of 3 abuse. Welcome to my swamp.</p>
   </div>
 </section>
@@ -183,7 +182,7 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;
 <section id="work">
   <p class="cmd"><span class="dim">$</span> <b>git log --oneline work/</b></p>
   <div class="out log">
-    <div class="row"> 
+    <div class="row">
       <span class="sha">a4f19c</span>
       <div>
         <h2>Software Engineer, Machine Learning Infrastructure — Certara AI (US)</h2>
@@ -198,9 +197,9 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;
       </div>
     </div>
     <div class="row">
-      <span class="sha">7b02de</span>
+      <span class="sha">3f0c8b</span>
       <div>
-        <h2>Software Engineering intern — Certara (UK) </h2>
+        <h2>Software Engineering intern — Certara (UK)</h2>
         <p class="sub">some good old fashioned automation of repetitive tasks in python, the intern classic. 90% latency reduction isn't half bad though.</p>
       </div>
     </div>
@@ -219,6 +218,7 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;
     </div>
   </div>
 </section>
+
 <section id="projects">
   <p class="cmd"><span class="dim">$</span> <b>ls -la projects/</b></p>
   <div class="out ls">
@@ -237,44 +237,40 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;
 ├── infra/
 │   ├── kubernetes
 │   ├── docker
-│   ├── aws-bedrock
 │   ├── rabbitmq
 │   └── keydb
 ├── data/
 │   ├── elasticsearch
 │   ├── redis
-│   ├── rabbitmq
 │   └── weaviate
 ├── cloud/
-│   ├── aws
+│   ├── aws (bedrock)
 │   ├── azure
 │   ├── gcp
-│   └── circleci/github actions
-├── ai dev tools/
-│   ├── cursor agents
-│   ├── claude code
+│   └── circleci / github-actions
+├── ai-dev-tools/
+│   ├── cursor
+│   ├── claude-code
 │   └── codex
-├── languages/
-│   ├── python
-│   └── c/c++
-│   ├── python
-│   └── java (groovy/kotlin)
+└── languages/
+    ├── python
+    ├── c / c++
+    └── java (groovy / kotlin)</pre>
 </section>
 
 <section>
   <p class="cmd"><span class="dim">$</span> <b>cat now.txt</b></p>
   <div class="out">
-    <p class="dim">Reading DDIA, AI Engineering, Musashi Miyamoto and Thomas Paine. Figuring out what vLLM meant in the patch notes. Adjusting at the same speed that AWS fiddles with the Bedrock Converse API. Riding fast motorcycles. Lifting. Running. Rugby once in a blue moon. Bank fishing the White River.
-    Getting Farsi past the point where I can read Rumi without sounding silly.</p>
+    <p class="dim">Reading DDIA, AI Engineering, Musashi Miyamoto and Thomas Paine. Figuring out what vLLM meant in the patch notes. Adjusting at the same speed that AWS fiddles with the Bedrock Converse API. Riding fast motorcycles. Lifting. Running. Rugby once in a blue moon. Bank fishing the White River. Getting Farsi past the point where I can read Rumi without sounding silly.</p>
   </div>
 </section>
 
 <section id="contact">
   <p class="cmd"><span class="dim">$</span> <b>./contact</b></p>
   <div class="out links">
-    <a href="aryanghbd@gmail.com">email</a>
-    <a href="https://github.com/aryanghbd" target="_blank" rel="me">github</a>
-    <a href="https://www.linkedin.com/in/aryan-ghobadi/" target="_blank" rel="me">linkedin</a>
+    <a href="mailto:aryanghbd@gmail.com">email</a>
+    <a href="https://github.com/aryanghbd" target="_blank" rel="me noopener">github</a>
+    <a href="https://www.linkedin.com/in/aryan-ghobadi/" target="_blank" rel="me noopener">linkedin</a>
   </div>
 </section>
 
@@ -319,9 +315,12 @@ var body = document.body,
 body.classList.add("js");
 
 /* ---- theme -------------------------------------------------- */
+/* Always set the attribute. All three palettes live in [data-theme]
+   blocks, so removing it would leave the page with no colour tokens
+   at all — which is what the mono swatch used to do. */
 function setTheme(name){
-  if(name === "mono"){ document.documentElement.removeAttribute("data-theme"); }
-  else { document.documentElement.setAttribute("data-theme", name); }
+  if(["mono","green","amber"].indexOf(name) === -1) return;
+  document.documentElement.setAttribute("data-theme", name);
   try{ localStorage.setItem("theme", name); }catch(e){}
 }
 try{ var saved = localStorage.getItem("theme"); if(saved) setTheme(saved); }catch(e){}
@@ -349,12 +348,12 @@ function jump(id){
 /* ---- commands ----------------------------------------------- */
 var cmds = {
   help: function(){
-    return ["about  work  projects  stack  contact  — jump to a section",
-            "whoami                                 — the short version",
-            "now                                    — what I'm on right now",
-            "theme [mono|green|amber]               — phosphor",
-            "history                                — recall",
-            "clear                                  — clear this pane"];
+    return ["about  work  school  projects  stack  contact  — jump to a section",
+            "whoami                                          — the short version",
+            "now                                             — what I'm on right now",
+            "theme [mono|green|amber]                        — phosphor",
+            "history                                         — recall",
+            "clear                                           — clear this pane"];
   },
   whoami: function(){
     return ["aryan",
@@ -381,7 +380,7 @@ var cmds = {
   sudo: function(){ return ["nice try"]; }
 };
 
-["about","work","projects","stack"].forEach(function(id){
+["about","work","school","projects","stack"].forEach(function(id){
   cmds[id] = function(){ jump(id); return ["-> " + id]; };
 });
 
